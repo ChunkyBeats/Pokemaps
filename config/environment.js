@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pokemap',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://poke-map.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
