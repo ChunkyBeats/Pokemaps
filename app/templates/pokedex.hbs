@@ -1,6 +1,6 @@
 <h2>Pokedex</h2>
 <ul>
   {{#each pokemon in model}}
-    <li {{action 'pokedexEntry' pokemon.resource_uri}}>{{pokemon.name}}</li>
+    <li>{{#link-to 'pokemon' pokemon.national_id}}{{pokemon.name}}{{/link-to}}</li>
   {{/each}}
 </ul>

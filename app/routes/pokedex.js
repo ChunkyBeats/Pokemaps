@@ -6,7 +6,11 @@ export default Ember.Route.extend({
     return $.getJSON(url).then(function(responseJSON){
       var pokemons = [];
       responseJSON.pokemon.forEach(function(pokemon){
-        pokemons.push(pokemon);
+        pokemon.resource_uri;
+        var newURL = 'http://pokeapi.co/' + pokemon.resource_uri;
+        return $.getJSON(newURL).then(function(addPokemon) {
+          pokemons.push(addPokemon);
+        })
       });
       return pokemons;
     });

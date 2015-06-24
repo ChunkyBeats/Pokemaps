@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "'self'",
       'connect-src': "'self' wss://*.firebaseio.com http://pokeapi.co/",
-      'img-src': "'self'",
+      'img-src': "'self' http://pokeapi.co/",
       'style-src': "'self' 'unsafe-inline'",
       'frame-src': "'none'"
     }
