@@ -22,7 +22,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "'self'",
-      'connect-src': "'self' wss://*.firebaseio.com",
+      'connect-src': "'self' wss://*.firebaseio.com http://pokeapi.co/api/v1/",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline'",
       'frame-src': "'none'"
