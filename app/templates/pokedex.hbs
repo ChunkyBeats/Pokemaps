@@ -1,8 +1,6 @@
 <h2>Pokedex</h2>
 <ul>
   {{#each pokemon in model}}
-    <li>{{pokemon.name}}</li>
+    <li {{action 'pokedexEntry' pokemon.resource_uri}}>{{pokemon.name}}</li>
   {{/each}}
 </ul>
-
-{{outlet}}
