@@ -4,6 +4,15 @@ This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
 ## Prerequisites
+Install the google-maps add-in for Ember
+
+ember install:addon ember-google-map
+bower install --save ember#1.9.1
+
+bower install --save handlebars#2.0.0
+
+npm uninstall --save-dev broccoli-ember-hbs-template-compiler
+npm install --save-dev ember-cli-htmlbars@0.6.0
 
 You will need the following things properly installed on your computer.
 
@@ -50,4 +59,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
