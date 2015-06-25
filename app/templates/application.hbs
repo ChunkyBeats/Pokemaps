@@ -1,22 +1,8 @@
 <nav class="navbar navbar-default">
   <ul class="nav navbar-nav">
-    <li>{{#link-to 'pokedex'}}Pokedex{{/link-to}}</li>
+    <li>{{#link-to 'pokedex'}}Poke-dex{{/link-to}}</li>
   </ul>
 </nav>
-<h1>Pokemon Map Demo</h1>
 
-{{
-  google-map
-    markerInfoWindowTemplateName='map/info-window'
-    markers=model
-    lat=centerLat
-    lng=centerLng
-    zoom=17
-    type='map'
-    gopt_zoomControl=false
-    gopt_scrollwheel=true
-    gopt_maxZoom=17
-    gopt_minZoom=17
-}}
 
 {{outlet}}

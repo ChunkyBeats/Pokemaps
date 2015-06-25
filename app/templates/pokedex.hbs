@@ -1,21 +1,32 @@
-<h2>Pokedex</h2>
-<ul>
-  {{#each pokemon in model}}
-    <li>{{#link-to 'pokemon' pokemon.national_id}}{{pokemon.name}}{{/link-to}}</li>
-  {{/each}}
-</ul>
 
 <div class='pokedex'>
   <div class='row'>
     <div class='container'>
-      <div class='column1'>
-        <div class="map">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. fugiat quo voluptas nulla pariatur?</p>
+      <div class='col-md-6'>
+        <div class="map-canvas">
+          {{
+            google-map
+              markerInfoWindowTemplateName='map/info-window'
+markers=model
+              lat=centerLat
+              lng=centerLng
+              zoom=17
+              type='map'
+              gopt_zoomControl=false
+              gopt_scrollwheel=true
+              gopt_maxZoom=17
+              gopt_minZoom=17
+          }}
         </div>
       </div>
-      <div class='column2'>
+      <div class='col-md-6'>
         <div class="information">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. fugiat quo voluptas nulla pariatur?</p>
+          <h2>Poke-dex</h2>
+          <ul>
+            {{#each pokemon in model}}
+              <li>{{#link-to 'pokemon' pokemon.national_id}}{{pokemon.name}}{{/link-to}}</li>
+            {{/each}}
+          </ul>
         </div>
       </div>
     </div>
