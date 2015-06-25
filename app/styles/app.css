@@ -1,5 +1,5 @@
 body {
-  background: url('../assets/images/town.jpg');
+  background: url('../assets/images/pokedextown.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -27,15 +27,13 @@ body {
 
 .column1 {
   display: table-cell;
-  background: url('../assets/images/pokedexleft.png');
   background-repeat: no-repeat;
   width: 396px;
-  height: 
+  /*overflow: visible;*/
 }
 
 .column2 {
   display: table-cell;
-  background: url('../assets/images/pokedexright.png');
   background-repeat: no-repeat;
   width: 50%;
 }
@@ -48,6 +46,7 @@ body {
   margin-left: 5%;
   border-style: solid;
   border-width: 5px;
+  line-height: 20px;
 }
 
 .information {
