@@ -61,3 +61,8 @@ body {
     height: 700px;
   }
 }*/
+
+.map-canvas {
+  width: 600px;
+  height: 400px;
+}
