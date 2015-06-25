@@ -67,3 +67,13 @@ h2 {
   position: relative;
   z-index: 10;
 }
+
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+  border-radius: 5%;
+}
