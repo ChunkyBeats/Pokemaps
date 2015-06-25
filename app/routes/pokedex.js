@@ -9,8 +9,10 @@ export default Ember.Route.extend({
         pokemon.resource_uri;
         var newURL = 'http://pokeapi.co/' + pokemon.resource_uri;
         return $.getJSON(newURL).then(function(addPokemon) {
-          pokemons.push(addPokemon);
-        })
+          if(addPokemon.pkdx_id < 151){
+            pokemons.push(addPokemon);
+          }
+        });
       });
       return pokemons;
     });
