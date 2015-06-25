@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('pokedex');
+  this.route('pokemon', {path: 'pokemon/:pkmn_id'});
 });
 
 export default Router;
