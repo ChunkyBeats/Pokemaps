@@ -1,0 +1,13 @@
+<strong>You've found {{title}}!</strong><br>
+<img {{bind-attr src=icon}} alt="squirtle" height="100" width="100" />
+<p>{{body}}</p>
+<p>
+  <small>
+    {{#if caught}}
+      <p>You already caught this pokemon</p>
+      <button name="catch" {{action 'release' id}}>Release</button>
+    {{else}}
+      <button name="catch" {{action 'throwPokeball' id}}>Catch em!</button>
+    {{/if}}
+  </small>
+</p>

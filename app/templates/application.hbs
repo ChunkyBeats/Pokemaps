@@ -4,26 +4,20 @@
   </ul>
 </nav>
 <h1>Pokemon Map Demo</h1>
-<label for="add pokemon test">poke test</label>
-{{input id="addPokemon" name="some_name" value=addPokemon}}
-<button name="submit" {{action 'submit'}}>submit</button>
-<ul>
-{{#each pokemon in model}}
-  <li>{{pokemon.title}}</li>
-{{/each}}
-</ul>
+<button {{action 'newGame'}}>new game</button>
 {{
   google-map
-    markerInfoWindowTemplateName='map/info-window'
+    markerInfoWindowTemplateName='info-window'
+    markerController='map/marker'
     markers=model
     lat=centerLat
     lng=centerLng
-    zoom=17
+    zoom=18
     type='map'
     gopt_zoomControl=false
     gopt_scrollwheel=true
-    gopt_maxZoom=17
-    gopt_minZoom=17
+    gopt_maxZoom=18
+    gopt_minZoom=18
 }}
 
 {{outlet}}
