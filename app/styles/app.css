@@ -12,11 +12,11 @@ body {
 
 .information {
   background: black;
-  margin-left: 50px;
-  margin-top: 45%;
+  margin-left: 10%;
+  margin-top: 32%;
   color: green;
-  width: 380px;
-  height: 400px;
+  width: 430px;
+  height: 470px;
   border-radius: 2%;
   color: #74EE35;
   font-family: Orbitron;
@@ -51,9 +51,11 @@ a.link {
 }
 
 .map-canvas {
-  width: 400px;
-  height: 340px;
-  margin-top: 45%;
+  width: 470px;
+  height: 470px;
+  margin-top: 32%;
+  margin-left: 4%;
+  border-radius: 2%;
 }
 
 h2 {
