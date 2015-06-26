@@ -4,7 +4,14 @@
   </ul>
 </nav>
 <h1>Pokemon Map Demo</h1>
-
+<label for="add pokemon test">poke test</label>
+{{input id="addPokemon" name="some_name" value=addPokemon}}
+<button name="submit" {{action 'submit'}}>submit</button>
+<ul>
+{{#each pokemon in model}}
+  <li>{{pokemon.title}}</li>
+{{/each}}
+</ul>
 {{
   google-map
     markerInfoWindowTemplateName='map/info-window'
