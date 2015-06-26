@@ -7,10 +7,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/pokemap.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
 
     {{content-for 'head-footer'}}
   </head>
@@ -22,4 +24,13 @@
 
     {{content-for 'body-footer'}}
   </body>
+  <div class="player">
+    <audio controls>
+        <!-- Audio files -->
+        <source src="../assets/images/music2.mp3" type="audio/mp3">
+        <source src="../assets/images/music2.mp3" type="audio/mp3">
+        <!-- Fallback for browsers that don't support the <audio> element -->
+        <a href="https://cdn.selz.com/plyr/1.0/logistics-96-sample.mp3">Download</a>
+    </audio>
+</div>
 </html>

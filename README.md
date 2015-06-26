@@ -11,6 +11,10 @@ bower install --save ember#1.9.1
 
 bower install --save handlebars#2.0.0
 
+Install music player
+
+bower install plyr
+
 npm uninstall --save-dev broccoli-ember-hbs-template-compiler
 npm install --save-dev ember-cli-htmlbars@0.6.0
 
