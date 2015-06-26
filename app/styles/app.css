@@ -10,13 +10,19 @@ body {
   background-size: 100%;
 }*/
 
+.google-map {
+  display: inline-block;
+  margin: 10% 2%
+}
+
 .information {
+  display: inline-block;
   background: black;
-  margin-left: 10%;
-  margin-top: 32%;
+  margin-left: 11%;
+  margin-top: 15%;
   color: green;
-  width: 430px;
-  height: 470px;
+  width: 575px;
+  height: 600px;
   border-radius: 2%;
   color: #74EE35;
   font-family: Orbitron;
@@ -51,10 +57,10 @@ a.link {
 }
 
 .map-canvas {
-  width: 470px;
-  height: 470px;
-  margin-top: 32%;
-  margin-left: 4%;
+  width: 600px;
+  height: 550px;
+  margin-top: 13%;
+  margin-left: 10%;
   border-radius: 2%;
 }
 

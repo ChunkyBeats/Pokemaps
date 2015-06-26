@@ -1,12 +1,13 @@
-<h2>Pokedex</h2>
-<ul>
-  {{#each pokemon in model}}
-    {{#if pokemon.caught}}
-      <li>{{pokemon.name}}</li>
-    {{/if}}
-  {{/each}}
-</ul>
-
+<div class="information">
+  <h2>Poke-dex</h2>
+  <ul>
+    {{#each pokemon in model}}
+      {{#if pokemon.caught}}
+        <li>{{pokemon.name}}</li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
 <div class='pokedex'>
   <div class='row'>
     <div class='container'>
@@ -15,14 +16,7 @@
         </div>
       </div>
       <div class='col-md-6'>
-        <div class="information">
-          <h2>Poke-dex</h2>
-          <ul>
-            {{#each pokemon in model}}
-              <li>{{#link-to 'pokemon' pokemon.national_id}}{{pokemon.name}}{{/link-to}}</li>
-            {{/each}}
-          </ul>
-        </div>
+
       </div>
     </div>
   </div>
